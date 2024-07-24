@@ -11,7 +11,7 @@ const CountryCard = ({ name, flagimg, flagalttext }) => {
 };
 
 function Countries() {
-  const Apiurl = "https://xcountries-backend.azurewebsites.net/all";
+  const Apiurl = "https://xcountries-backend.azurewebsites.ne/all";
 
   const [countries, setCountries] = useState([]);
   console.log({ countries });
@@ -22,7 +22,7 @@ function Countries() {
       .then((data) => {
         setCountries(data);
       })
-      .catch((error) => console.log("Error fetching data: " + error.message));
+      .catch((error) => console.log("Error fetching data"));
   }, []);
 
   return (
