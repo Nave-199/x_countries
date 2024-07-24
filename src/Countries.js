@@ -22,7 +22,7 @@ function Countries() {
       .then((data) => {
         setCountries(data);
       })
-      .catch((error) => console.log("Error:", error));
+      .catch((error) => console.log("Error fetching data: ", error.message));
   }, []);
 
   return (
